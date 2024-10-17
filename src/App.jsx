@@ -1,12 +1,14 @@
-import './App.css';
-import DynamicForm from './component/DynemicForm';
-import formSchema from './form.json';
+import "./App.css";
+import DynamicForm from "./component/DynemicForm";
+import formSchema from "./form.json";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <div className="App">
-      {/* <h1 className='font-bold text-3xl'>Hello</h1> */}
-      <DynamicForm formSchema={formSchema}/>
+    <div>
+      <DynamicForm formSchema={formSchema} />
+      <ToastContainer />
     </div>
   );
 }
